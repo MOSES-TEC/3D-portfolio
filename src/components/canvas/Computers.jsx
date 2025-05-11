@@ -7,6 +7,14 @@ import CanvasLoader from '../Loader';
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
+  useEffect(() => {
+    console.log("Computer model:", computer);
+  }, []);
+
+  console.log("Is mobile:", isMobile);
+
+
+
   return (
     <mesh>
       <ambientLight intensity={0.8} />
